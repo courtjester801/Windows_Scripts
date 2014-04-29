@@ -13,9 +13,19 @@
 '	Added new versions (to 7u20)
 '    Modified: 20 Jun 2013, Chris Cassun
 '	Added new versions (to 7u24)
+'    Modified: 11 Sep 2013, Chris Cassun
+'	Added new versions (to 7u40)
+'	Corrected uninstall error from previous version.
+'    Modified: 24 Oct 2013, Chris Cassun
+'	Added new versions (to 7u45)
+'    Modified: 16 Jan 2014, Chris Cassun
+'	Added new versions (to 7u51)
+'    Modified: 17 Apr 2014, Chris Cassun
+'	Added new versions (to 7u55)
+'
 '
 '     Program: Java Runtime Environment
-'     Version: 7u15
+'     Version: 7u55
 ' Description: This will uninstall previous versions and then installs
 '			   the current version
 '			   1) Define the relative installation path
@@ -195,15 +205,26 @@ Sub Uninstall()
 	DIM Uninstall7_19x64 : Uninstall7_19x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417019FF}" & Parameters
 	DIM Uninstall7_20    : Uninstall7_20    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217020FF}" & Parameters
 	DIM Uninstall7_20x64 : Uninstall7_20x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417020FF}" & Parameters
-	DIM Uninstall7_20    : Uninstall7_21    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217021FF}" & Parameters
-	DIM Uninstall7_20x64 : Uninstall7_21x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417021FF}" & Parameters
-	DIM Uninstall7_20    : Uninstall7_22    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217022FF}" & Parameters
-	DIM Uninstall7_20x64 : Uninstall7_22x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417022FF}" & Parameters
-	DIM Uninstall7_20    : Uninstall7_23    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217023FF}" & Parameters
-	DIM Uninstall7_20x64 : Uninstall7_23x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417023FF}" & Parameters
-	DIM Uninstall7_20    : Uninstall7_24    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217024FF}" & Parameters
-	DIM Uninstall7_20x64 : Uninstall7_24x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417024FF}" & Parameters
-
+	DIM Uninstall7_21    : Uninstall7_21    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217021FF}" & Parameters
+	DIM Uninstall7_21x64 : Uninstall7_21x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417021FF}" & Parameters
+	DIM Uninstall7_22    : Uninstall7_22    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217022FF}" & Parameters
+	DIM Uninstall7_22x64 : Uninstall7_22x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417022FF}" & Parameters
+	DIM Uninstall7_23    : Uninstall7_23    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217023FF}" & Parameters
+	DIM Uninstall7_23x64 : Uninstall7_23x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417023FF}" & Parameters
+	DIM Uninstall7_24    : Uninstall7_24    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217024FF}" & Parameters
+	DIM Uninstall7_24x64 : Uninstall7_24x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417024FF}" & Parameters
+	DIM Uninstall7_25    : Uninstall7_25    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217025FF}" & Parameters
+	DIM Uninstall7_25x64 : Uninstall7_25x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417025FF}" & Parameters
+REM 11 Sep 13 Java skipped from 25 to 40 for this version.
+	DIM Uninstall7_40    : Uninstall7_40    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217040FF}" & Parameters
+	DIM Uninstall7_40x64 : Uninstall7_40x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417040FF}" & Parameters
+REM 24 Oct 13 Java skipped from 40 to 45 for this version. 
+	DIM Uninstall7_40    : Uninstall7_45    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217045FF}" & Parameters
+	DIM Uninstall7_40x64 : Uninstall7_45x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417045FF}" & Parameters
+REM 16 Jan 14 Java skipped from 45 to 51 for this version. 
+	DIM Uninstall7_40    : Uninstall7_51    = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F83217051FF}" & Parameters
+	DIM Uninstall7_40x64 : Uninstall7_51x64 = "msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F86417051FF}" & Parameters
+REM 17 Apr 14 Java skipped from 51 to 55 for this version. 
 	oShell.Run Uninstall01, 7, True
 	oShell.Run Uninstall02, 7, True
 	oShell.Run Uninstall03, 7, True
@@ -292,7 +313,18 @@ Sub Uninstall()
 	oShell.Run Uninstall7_23x64, 7, True
 	oShell.Run Uninstall7_24, 7, True
 	oShell.Run Uninstall7_24x64, 7, True
-
+	oShell.Run Uninstall7_25, 7, True
+	oShell.Run Uninstall7_25x64, 7, True
+REM 11 Sep 13 Java skipped from 25 to 40 for this version
+	oShell.Run Uninstall7_40, 7, True
+	oShell.Run Uninstall7_40x64, 7, True
+REM 24 Oct 13 Java skipped from 40 to 45 for this version
+	oShell.Run Uninstall7_45, 7, True
+	oShell.Run Uninstall7_45x64, 7, True
+REM 16 Jan 14 Java skipped from 45 to 51 for this version
+	oShell.Run Uninstall7_51, 7, True
+	oShell.Run Uninstall7_51x64, 7, True
+REM  17 Apr 14 Java skipped from 51 to 55 for this version
 	REM Cleanup Local Variables
 	Set oShell          = Nothing
 	Set Parameters      = Nothing
@@ -384,6 +416,18 @@ Sub Uninstall()
 	Set Uninstall7_23x64 = Nothing
 	Set Uninstall7_24    = Nothing
 	Set Uninstall7_24x64 = Nothing
+	Set Uninstall7_25    = Nothing
+	Set Uninstall7_25x64 = Nothing
+REM 11 Sep 13 Java skipped from 25 to 40 for this version
+	Set Uninstall7_40    = Nothing
+	Set Uninstall7_40x64 = Nothing
+REM 24 Oct 13 Java skipped from 40 to 45 for this version
+	Set Uninstall7_45    = Nothing
+	Set Uninstall7_45x64 = Nothing
+REM 16 Jan 14 Java skipped from 45 to 51 for this version
+	Set Uninstall7_51    = Nothing
+	Set Uninstall7_51x64 = Nothing
+REM 17 Jan 14 Java skipped from 51 to 55 for this version
 
 End Sub
 
